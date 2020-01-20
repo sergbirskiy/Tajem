@@ -8,6 +8,10 @@
 }
 
 .list-title {
+  color: red;
+}
+.list-desc {
+  color: blue;
 }
 
 .list-modest {
