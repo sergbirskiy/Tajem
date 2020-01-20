@@ -1,0 +1,30 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-title {
+}
+
+.list-modest {
+  counter-reset: modest;
+}
+.list-modest .list-item::before {
+  counter-increment: modest;
+  content: "0" counter(modest);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+}
